@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85D5C377-4CC9-4AC1-B828-33B8E2D87DC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SchoolManagementSystem</RootNamespace>
+    <AssemblyName>SchoolManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Anna\Desktop\SMS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>School Management System</ProductName>
+    <PublisherName>Zabelle Castillo</PublisherName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>snhs_logo_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1091A8BC49DB85597331EA0A36ED6875C34E1A30</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form App\school grading design\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\SampleApp\packages\Guna.UI2.WinForms.2.0.3.3\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Downloads\Windows Form App\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Form\Admin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Form\Admin_Form.Designer.cs">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UserControl\LogDetails_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl\LogDetails_UserControl.Designer.cs">
+      <DependentUpon>LogDetails_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UserControl\Notification_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl\Notification_UserControl.Designer.cs">
+      <DependentUpon>Notification_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UserControl\TeacherSched_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl\TeacherSched_UserControl.Designer.cs">
+      <DependentUpon>TeacherSched_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UserControl\YearClass_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_UserControl\YearClass_UserControl.Designer.cs">
+      <DependentUpon>YearClass_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard_Form.Designer.cs">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ForgotPassword_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ForgotPassword_Form.Designer.cs">
+      <DependentUpon>ForgotPassword_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Registration_Form.Designer.cs">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPassword_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPassword_Form.Designer.cs">
+      <DependentUpon>ResetPassword_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SecurityLogin_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SecurityLogin_Form.Designer.cs">
+      <DependentUpon>SecurityLogin_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="School_DBDataSetClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSetClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSetFullGrades.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSetFullGrades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_Class.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_Class.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_DELETE_ACC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_DELETE_ACC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_Feedback.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_Feedback.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_Grades.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_Grades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_Subjects.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_Subjects.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_TeacherLog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_TeacherLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_TeacherSched.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_TeacherSched.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="School_DBDataSet_YearLevel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School_DBDataSet_YearLevel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\AddSubject_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\AddSubject_UserControl.Designer.cs">
+      <DependentUpon>AddSubject_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\Dashboard_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\Dashboard_UserControl.Designer.cs">
+      <DependentUpon>Dashboard_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeactivateAccout_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeactivateAccout_UserControl.Designer.cs">
+      <DependentUpon>DeactivateAccout_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeleteAccount_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeleteAccount_UserControl.Designer.cs">
+      <DependentUpon>DeleteAccount_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeleteStudent_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\DeleteStudent_UserControl.Designer.cs">
+      <DependentUpon>DeleteStudent_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\Export_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\Export_UserControl.Designer.cs">
+      <DependentUpon>Export_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\Inbox_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\Inbox_UserControl.Designer.cs">
+      <DependentUpon>Inbox_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\PrintGrades_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\PrintGrades_UserControl.Designer.cs">
+      <DependentUpon>PrintGrades_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\RegStudent_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\RegStudent_UserControl.Designer.cs">
+      <DependentUpon>RegStudent_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\Settings_SecurityAcc_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\Settings_SecurityAcc_UserControl.Designer.cs">
+      <DependentUpon>Settings_SecurityAcc_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\StudentGrade_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\StudentGrade_UserControl.Designer.cs">
+      <DependentUpon>StudentGrade_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Forms\TeacherClassSchedule_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Forms\TeacherClassSchedule_UserControl.Designer.cs">
+      <DependentUpon>TeacherClassSchedule_UserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Form\Admin_Form.resx">
+      <DependentUpon>Admin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UserControl\LogDetails_UserControl.resx">
+      <DependentUpon>LogDetails_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UserControl\Notification_UserControl.resx">
+      <DependentUpon>Notification_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UserControl\TeacherSched_UserControl.resx">
+      <DependentUpon>TeacherSched_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UserControl\YearClass_UserControl.resx">
+      <DependentUpon>YearClass_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard_Form.resx">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ForgotPassword_Form.resx">
+      <DependentUpon>ForgotPassword_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Registration_Form.resx">
+      <DependentUpon>Registration_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPassword_Form.resx">
+      <DependentUpon>ResetPassword_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SecurityLogin_Form.resx">
+      <DependentUpon>SecurityLogin_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\AddSubject_UserControl.resx">
+      <DependentUpon>AddSubject_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\Dashboard_UserControl.resx">
+      <DependentUpon>Dashboard_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\DeactivateAccout_UserControl.resx">
+      <DependentUpon>DeactivateAccout_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\DeleteAccount_UserControl.resx">
+      <DependentUpon>DeleteAccount_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\DeleteStudent_UserControl.resx">
+      <DependentUpon>DeleteStudent_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\Export_UserControl.resx">
+      <DependentUpon>Export_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\Inbox_UserControl.resx">
+      <DependentUpon>Inbox_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\PrintGrades_UserControl.resx">
+      <DependentUpon>PrintGrades_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\RegStudent_UserControl.resx">
+      <DependentUpon>RegStudent_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\Settings_SecurityAcc_UserControl.resx">
+      <DependentUpon>Settings_SecurityAcc_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\StudentGrade_UserControl.resx">
+      <DependentUpon>StudentGrade_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Forms\TeacherClassSchedule_UserControl.resx">
+      <DependentUpon>TeacherClassSchedule_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SchoolManagementSystem_TemporaryKey.pfx" />
+    <None Include="School_DBDataSetClass.xsc">
+      <DependentUpon>School_DBDataSetClass.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSetClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSetClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSetClass.xss">
+      <DependentUpon>School_DBDataSetClass.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSetFullGrades.xsc">
+      <DependentUpon>School_DBDataSetFullGrades.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSetFullGrades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSetFullGrades.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSetFullGrades.xss">
+      <DependentUpon>School_DBDataSetFullGrades.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Class.xsc">
+      <DependentUpon>School_DBDataSet_Class.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Class.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_Class.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_Class.xss">
+      <DependentUpon>School_DBDataSet_Class.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_DELETE_ACC.xsc">
+      <DependentUpon>School_DBDataSet_DELETE_ACC.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_DELETE_ACC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_DELETE_ACC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_DELETE_ACC.xss">
+      <DependentUpon>School_DBDataSet_DELETE_ACC.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Feedback.xsc">
+      <DependentUpon>School_DBDataSet_Feedback.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Feedback.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_Feedback.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_Feedback.xss">
+      <DependentUpon>School_DBDataSet_Feedback.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Grades.xsc">
+      <DependentUpon>School_DBDataSet_Grades.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Grades.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_Grades.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_Grades.xss">
+      <DependentUpon>School_DBDataSet_Grades.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Subjects.xsc">
+      <DependentUpon>School_DBDataSet_Subjects.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_Subjects.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_Subjects.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_Subjects.xss">
+      <DependentUpon>School_DBDataSet_Subjects.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_TeacherLog.xsc">
+      <DependentUpon>School_DBDataSet_TeacherLog.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_TeacherLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_TeacherLog.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_TeacherLog.xss">
+      <DependentUpon>School_DBDataSet_TeacherLog.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_TeacherSched.xsc">
+      <DependentUpon>School_DBDataSet_TeacherSched.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_TeacherSched.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_TeacherSched.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_TeacherSched.xss">
+      <DependentUpon>School_DBDataSet_TeacherSched.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_YearLevel.xsc">
+      <DependentUpon>School_DBDataSet_YearLevel.xsd</DependentUpon>
+    </None>
+    <None Include="School_DBDataSet_YearLevel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School_DBDataSet_YearLevel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="School_DBDataSet_YearLevel.xss">
+      <DependentUpon>School_DBDataSet_YearLevel.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snhs_logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\241276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeShowHideGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeShowGRN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-system-login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashgreen_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_entry_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-round-solid-icon_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="School_DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="School_DB_log.LDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snhs_logo_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="SCHOOL_DB1_log.ldf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
